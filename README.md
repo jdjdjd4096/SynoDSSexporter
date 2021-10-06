@@ -8,7 +8,7 @@ https://kb.synology.com/en-ca/DSM/help/DSM/AdminCenter/system_configbackup?versi
 
 # Generated DSS file example 
 
-<paste image here> 
+/img/220540_01.png
 
 # DS File structure 
 The file structure is not simple in first eye sight, because this file is as archive compressed twicely. 
