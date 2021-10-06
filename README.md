@@ -121,7 +121,7 @@ Compressed: 174080
  
 The main importan file is _Syno_ConfBkp.db SQLite database. This database holds most of the important files that stores the configuration. This powershell script will be extraxt this file all possible element to readable format for humans. In below lines the isimple information about configuration are placed in dedicates sections 
  
-[CONFIGBKP]
+\[CONFIGBKP]
 Main folder with extracted config files. 
  
 [CONFIGBKP] config_info
@@ -147,7 +147,7 @@ Connected to a transient in-memory database.
 Use ".open FILENAME" to reopen on a persistent database.
 sqlite> .open _Syno_ConfBkp.db
 sqlite> .databases
-main: C:\Users\jdjd\Documents\SynoDSSexporter\ConfigBkp\_Syno_ConfBkp.db r/w
+main: C:\Users\<folder>\ConfigBkp\_Syno_ConfBkp.db r/w
 sqlite> .dbinfo
 database page size:  4096
 write format:        1
@@ -187,6 +187,8 @@ confbkp_nfs_idmap_tb               confbkp_volume_tb
 confbkp_scheduler_table
 sqlite>
 ```
+More about stored information inside this file is located in this doc [here](docs/_Syno_ConfBkp.db.md)
+ 
 [tls_profile] datastore.json
 File holds information about services. 
 
@@ -202,6 +204,6 @@ File holds information about services.
 [tls_profile][services] smbftpd.conf
 File holds information about services. 
 
-[tls_profile][services] system_quickconnect.conf
+\[tls_profile][services] system_quickconnect.conf
 Quickconnect config         
             
