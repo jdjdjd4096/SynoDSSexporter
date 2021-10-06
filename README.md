@@ -6,6 +6,9 @@ DSS file is not suimply and fast readable by humans. Purpose of this script is t
 Synology explains very detail about this process on their help. If you don't know how generate this file automatically/manually please read this part of the help 
 https://kb.synology.com/en-ca/DSM/help/DSM/AdminCenter/system_configbackup?version=6
 
+Basic little info about DSS files that I found myself on Internet. ![here](https://gist.github.com/willfurnass/7db2a26a7a147cc8b86676651e1ab8c1)
+
+
 # Generated DSS file example 
 
 ![example](/img/220540_01.png)
