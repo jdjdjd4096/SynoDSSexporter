@@ -5,4 +5,34 @@ Synology DSS file exporter is a simple command line tool to extract info about s
 Synology explains very detail about this process on their help. If you don't know how generate this file automatically/manually please read this part of the help 
 https://kb.synology.com/en-ca/DSM/help/DSM/AdminCenter/system_configbackup?version=6
 
+# Generated DSS file example 
+
+<paste image here> 
+
 # DS File structure 
+The file structure is not simple in first eye sight, because this file is as archive compressed twicely. 
+ 
+ First test of the .dss file returns: 
+  
+**>"C:\Program Files\7-Zip\7z.exe" l dsm0_20211006.dss**
+
+7-Zip 19.00 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2019-02-21
+
+Scanning the drive for archives:
+1 file, 19956 bytes (20 KiB)
+
+Listing archive: dsm0_20211006.dss
+
+--
+Path = dsm0_20211006.dss
+Type = xz
+Physical Size = 19956
+Method = LZMA2:23 CRC64
+Streams = 1
+Blocks = 1
+
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+                    .....       174080        19956  dsm0_20211006
+------------------- ----- ------------ ------------  ------------------------
+                                174080        19956  1 files
