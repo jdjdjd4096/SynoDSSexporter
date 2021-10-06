@@ -121,10 +121,12 @@ Compressed: 174080
  
 The main importan file is _Syno_ConfBkp.db SQLite database. This database holds most of the important files that stores the configuration. This powershell script will be extraxt this file all possible element to readable format for humans. In below lines the isimple information about configuration are placed in dedicates sections 
  
-\[CONFIGBKP]
+**[CONFIGBKP]**
+ 
 Main folder with extracted config files. 
  
-[CONFIGBKP] config_info
+**[CONFIGBKP] config_info**
+ 
 File holds information about the hardware and installed DSM version. 
 ```
 os_name="DSM"
@@ -134,13 +136,14 @@ dsm_minorversion="0"
 dsm_buildnumber="41890"
 unique="synology_armada370_ds115j"
 ```
-[CONFIGBKP] synoS2S.info
+**[CONFIGBKP] synoS2S.info**
+ 
 ```
 <empty> 
 ```
 **[CONFIGBKP] _Syno_ConfBkp.db**
  
-Main database with many iformation about our Synology device. We can simmply extract manually these information using sqlite tools. 
+Main database with many information about our Synology device. We can simmply extract manually these information using sqlite tools. 
 ```
 SQLite version 3.36.0 2021-06-18 18:36:39
 Enter ".help" for usage hints.
