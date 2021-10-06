@@ -138,7 +138,8 @@ unique="synology_armada370_ds115j"
 ```
 <empty> 
 ```
-[CONFIGBKP] _Syno_ConfBkp.db
+**[CONFIGBKP] _Syno_ConfBkp.db**
+ 
 Main database with many iformation about our Synology device. We can simmply extract manually these information using sqlite tools. 
 ```
 SQLite version 3.36.0 2021-06-18 18:36:39
@@ -189,21 +190,27 @@ sqlite>
 ```
 More about stored information inside this file is located in this doc [here](docs/_Syno_ConfBkp.db.md)
  
-[tls_profile] datastore.json
+**[tls_profile] datastore.json**
+ 
 File holds information about services. 
 
-[tls_profile][config] dsm.conf
+**[tls_profile][config] dsm.conf**
+ 
 Holds information about internal ssl configuration 
  
-[tls_profile][config] system_quickconnect.conf
+**[tls_profile][config] system_quickconnect.conf**
+ 
 Holds information about external ssl configuration 
 
-[tls_profile][services] dsm.conf
+**[tls_profile][services] dsm.conf**
+ 
 File holds information about services. 
  
-[tls_profile][services] smbftpd.conf
+**[tls_profile][services] smbftpd.conf**
+ 
 File holds information about services. 
 
-\[tls_profile][services] system_quickconnect.conf
+**[tls_profile][services] system_quickconnect.conf**
+ 
 Quickconnect config         
             
