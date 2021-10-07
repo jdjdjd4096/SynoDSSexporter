@@ -103,32 +103,30 @@ Files: 9
 Size:       161341
 Compressed: 174080
  
- >tree ConfigBkp /F
-\CONFIGBKP
-│   config_info
-│   synoS2S.info
-│   _Syno_ConfBkp.db
-│
-└───tls_profile
-    │   datastore.json
-    │
-    ├───config
-    │       dsm.conf
-    │       system_quickconnect.conf
-    │
-    └───services
-            dsm.conf
-            smbftpd.conf
-            system_quickconnect.conf
+Files & folders inside .DSS file. 
+ConfigBkp\config_info
+ConfigBkp\_Syno_ConfBkp.db
+ConfigBkp\tls_profile
+ConfigBkp\tls_profile\datastore.json
+ConfigBkp\tls_profile\services
+ConfigBkp\tls_profile\services\dsm.conf
+ConfigBkp\tls_profile\services\smbftpd.conf
+ConfigBkp\tls_profile\services\system_quickconnect.conf
+ConfigBkp\tls_profile\config
+ConfigBkp\tls_profile\config\dsm.conf
+ConfigBkp\tls_profile\config\system_quickconnect.conf
+ConfigBkp\synoS2S.info
+
+
  ```
  
-The main importan file is _Syno_ConfBkp.db SQLite database. This database holds most of the important files that stores the configuration. This powershell script will be extraxt this file all possible element to readable format for humans. In below lines the isimple information about configuration are placed in dedicates sections 
+The main important file is _Syno_ConfBkp.db SQLite database. This database holds most of the important files that stores the configuration. This powershell script will be extraxt this file all possible element to readable format for humans. In below lines the isimple information about configuration are placed in dedicates sections 
  
 **[CONFIGBKP]**
  
 Main folder with extracted config files. 
  
-**[CONFIGBKP] config_info**
+**[ConfigBkp\config_info]**
  
 File holds information about the hardware and installed DSM version. 
 ```
