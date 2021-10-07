@@ -1,9 +1,17 @@
 # full description of the _Syno_ConfBkp.db file. 
 
-1. List of all tables and their content explained 
+**1. List of all tables and their content explained **
 
-sqlite> .tables
-confbkp_config_tb   link to full description to this table is [here](#confbkp_config_tb)
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
+
+sqlite> .tables  
+confbkp_config_tb - link to full description to this table is [here](##confbkp_config_tb)
 
 confbkp_volume_tb
 
