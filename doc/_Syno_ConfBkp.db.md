@@ -42,7 +42,7 @@ sqlite>
 
 # confbkp_config_tb  
 
-This is the next section 
+:pencil: This is the next section 
 confbkp_config_tb
 
 sqlite> .schema ;
