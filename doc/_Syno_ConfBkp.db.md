@@ -1,6 +1,6 @@
 # full description of the _Syno_ConfBkp.db file. 
 
-**1. List of all tables and their content explained **
+**List of all tables and their content explained**
 
 sqlite> .tables  
 confbkp_config_tb - full description to this table is located [here](#confbkp_config_tb)  
