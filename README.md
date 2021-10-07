@@ -19,7 +19,7 @@ The file structure is not simple in first eye sight, because this file is as arc
  First test of the .dss file returns: 
   
 **>"C:\Program Files\7-Zip\7z.exe" l dsm0_20211006.dss**
-```
+```diff
 7-Zip 19.00 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2019-02-21
 
 Scanning the drive for archives:
@@ -50,7 +50,7 @@ Blocks = 1
  
  **"C:\Program Files\7-Zip\7z.exe" l dsm0_20211006**
  
- ```
+ ```diff
  Scanning the drive for archives:
 + 1 file, 174080 bytes (170 KiB)
 
@@ -84,7 +84,7 @@ Code Page = UTF-8
 
 Next step is simple to extract this file. Please use the switch x. This switch extract this content above to one folder called ConfigBkp.
  **"C:\Program Files\7-Zip\7z.exe" x dsm0_20211006**
-```
+```diff
  Scanning the drive for archives:
 1 file, 174080 bytes (170 KiB)
 
