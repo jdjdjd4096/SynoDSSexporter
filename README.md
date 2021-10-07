@@ -103,32 +103,28 @@ Files: 9
 Size:       161341
 Compressed: 174080
  
-Files & folders inside .DSS file. 
+Files inside .DSS file. 
 ConfigBkp\config_info
 ConfigBkp\_Syno_ConfBkp.db
-ConfigBkp\tls_profile
+ConfigBkp\synoS2S.info
 ConfigBkp\tls_profile\datastore.json
-ConfigBkp\tls_profile\services
 ConfigBkp\tls_profile\services\dsm.conf
 ConfigBkp\tls_profile\services\smbftpd.conf
 ConfigBkp\tls_profile\services\system_quickconnect.conf
-ConfigBkp\tls_profile\config
 ConfigBkp\tls_profile\config\dsm.conf
 ConfigBkp\tls_profile\config\system_quickconnect.conf
-ConfigBkp\synoS2S.info
-
 
  ```
  
 The main important file is _Syno_ConfBkp.db SQLite database. This database holds most of the important files that stores the configuration. This powershell script will be extraxt this file all possible element to readable format for humans. In below lines the isimple information about configuration are placed in dedicates sections 
  
-**[CONFIGBKP]**
+**[ConfigBkp\]**
  
-Main folder with extracted config files. 
+The main folder with extracted config files. 
  
 **[ConfigBkp\config_info]**
  
-File holds information about the hardware and installed DSM version. 
+This file are holding information about the hardware and installed DSM version. 
 ```
 os_name="DSM"
 conf_version="5"
@@ -137,12 +133,12 @@ dsm_minorversion="0"
 dsm_buildnumber="41890"
 unique="synology_armada370_ds115j"
 ```
-**[CONFIGBKP] synoS2S.info**
+**[ConfigBkp\synoS2S.info]**
  
 ```
 <empty> 
 ```
-**[CONFIGBKP] _Syno_ConfBkp.db**
+**[ConfigBkp\_Syno_ConfBkp.db]**
  
 Main database with many information about our Synology device. We can simmply extract manually these information using sqlite tools. 
 ```
@@ -152,7 +148,7 @@ Connected to a transient in-memory database.
 Use ".open FILENAME" to reopen on a persistent database.
 sqlite> .open _Syno_ConfBkp.db
 sqlite> .databases
-main: C:\Users\<folder>\ConfigBkp\_Syno_ConfBkp.db r/w
+main: C:\Users\<anonymised_folder>\ConfigBkp\_Syno_ConfBkp.db r/w
 sqlite> .dbinfo
 database page size:  4096
 write format:        1
@@ -193,28 +189,28 @@ confbkp_scheduler_table
 sqlite>
 ```
 More about stored information inside this file is located in this doc [here](docs/_Syno_ConfBkp.db.md)
- 
-**[tls_profile] datastore.json**
- 
-File holds information about services. 
 
-**[tls_profile][config] dsm.conf**
+**[ConfigBkp\tls_profile\datastore.json]**
  
-Holds information about internal ssl configuration 
- 
-**[tls_profile][config] system_quickconnect.conf**
- 
-Holds information about external ssl configuration 
+This file holds information about services. 
 
-**[tls_profile][services] dsm.conf**
+**[ConfigBkp\tls_profile\config\dsm.conf]**
  
-File holds information about services. 
+This file Holds information about internal ssl configuration 
  
-**[tls_profile][services] smbftpd.conf**
+**[ConfigBkp\tls_profile\config\system_quickconnect.conf]**
  
-File holds information about services. 
+This file Holds information about external ssl configuration 
 
-**[tls_profile][services] system_quickconnect.conf**
+**[ConfigBkp\tls_profile\services\dsm.conf]**
  
-Quickconnect config         
+This file holds information about services. 
+ 
+**[ConfigBkp\tls_profile\services\smbftpd.conf]**
+ 
+This file holds information about services. 
+
+**[ConfigBkp\tls_profile\services\system_quickconnect.conf]**
+ 
+This file holds the Quickconnect config         
             
