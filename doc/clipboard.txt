@@ -1,0 +1,12 @@
+confbkp_config_tb
+
+sqlite> .schema ;
+CREATE TABLE confbkp_config_tb(key TEXT, value TEXT);
+sqlite>
+
+sqlite> .schema confbkp_config_tb
+CREATE TABLE confbkp_config_tb(key TEXT, value TEXT);
+sqlite> .mode insert
+sqlite> .output data.out
+sqlite> select * from confbkp_config_tb;
+sqlite>
