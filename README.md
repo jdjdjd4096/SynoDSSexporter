@@ -188,7 +188,7 @@ confbkp_nfs_idmap_tb               confbkp_volume_tb
 confbkp_scheduler_table
 sqlite>
 ```
-More about stored information inside this file is located in this doc [here](docs/_Syno_ConfBkp.db.md)
+More about stored information inside this file is located in this doc [here](doc/_Syno_ConfBkp.db.md)
 
 **[ConfigBkp\tls_profile\datastore.json]**
  
