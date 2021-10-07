@@ -23,15 +23,15 @@ The file structure is not simple in first eye sight, because this file is as arc
 7-Zip 19.00 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2019-02-21
 
 Scanning the drive for archives:
-1 file, 19956 bytes (20 KiB)
++ 1 file, 19956 bytes (20 KiB)
 
 Listing archive: dsm0_20211006.dss
 
 --
 Path = dsm0_20211006.dss
-Type = xz
-Physical Size = 19956
-Method = LZMA2:23 CRC64
+- Type = xz
+- Physical Size = 19956
+- Method = LZMA2:23 CRC64
 Streams = 1
 Blocks = 1
 
@@ -52,7 +52,7 @@ Blocks = 1
  
  ```
  Scanning the drive for archives:
-1 file, 174080 bytes (170 KiB)
++ 1 file, 174080 bytes (170 KiB)
 
 Listing archive: dsm0_20211006
 
@@ -104,15 +104,15 @@ Size:       161341
 Compressed: 174080
  
 Files inside .DSS file. 
-ConfigBkp\config_info
-ConfigBkp\_Syno_ConfBkp.db
-ConfigBkp\synoS2S.info
-ConfigBkp\tls_profile\datastore.json
-ConfigBkp\tls_profile\services\dsm.conf
-ConfigBkp\tls_profile\services\smbftpd.conf
-ConfigBkp\tls_profile\services\system_quickconnect.conf
-ConfigBkp\tls_profile\config\dsm.conf
-ConfigBkp\tls_profile\config\system_quickconnect.conf
++ ConfigBkp\config_info
++ ConfigBkp\_Syno_ConfBkp.db
++ ConfigBkp\synoS2S.info
++ ConfigBkp\tls_profile\datastore.json
++ ConfigBkp\tls_profile\services\dsm.conf
++ ConfigBkp\tls_profile\services\smbftpd.conf
++ ConfigBkp\tls_profile\services\system_quickconnect.conf
++ ConfigBkp\tls_profile\config\dsm.conf
++ ConfigBkp\tls_profile\config\system_quickconnect.conf
 
  ```
  
