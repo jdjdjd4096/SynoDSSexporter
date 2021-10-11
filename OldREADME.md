@@ -13,7 +13,7 @@ Basic little info about DSS files that I found myself on Internet. ![here](https
 
 ![example](/img/220540_01.png)
 
-# DS File structure 
+# DSS File structure 
 The file structure is not simple in first eye sight, because this file is as archive compressed twicely. 
  
  First test of the .dss file returns: 
