@@ -20,7 +20,8 @@ Below find you all information written during creating this tool and analyse the
 This basic version of the script is written in Windows Powershell, when this script will be fully functional, other languages or platforms might will be created in the future. 
 Please download this code, save it in the same folder where .DSS file or files are placed. 
 Then run the script adding only as parameter the full filename with configuration downloaded from synology device NAS. 
-# Prerequisities before run the downloaded scripts (mainly SQLite modules)
+# Prerequisities needed to run the script 
+- before run the downloaded scripts (mainly SQLite modules)
 - check that module PSSQLite is installed 
 - 
 
