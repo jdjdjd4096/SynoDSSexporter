@@ -1,20 +1,23 @@
  # powershell script that connect to the SQLite database with Synology config dump and extract all important Synology settings to human readable format. 
 
-
-
- param($database)
-
  
+ param($database)
  set-psdebug -strict; $ErrorActionPreference = "stop"
 
 
- $database = "C:\Users\jdjd\Documents\SynoDSSexporter\ConfigBkp\_Syno_ConfBkp.db"
+ # set working path to the place where the script is placed 
 
-    if (!$database)
-    {
-        write-host "please provide full path to the unpacked file "
-    }
-    else
+
+ $database = "dsm0_20211006.dss"
+
+
+
+
+ if (!$database)
+ {
+        write-host "please provide full path to the downloaded file from Synology drive "
+ }
+ else
     {
         $data_confbkp_config_tb = @{}
 
