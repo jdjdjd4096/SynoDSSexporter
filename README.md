@@ -12,9 +12,9 @@ Inspiration for this scrtipt was the [page](https://gist.github.com/willfurnass/
 Is obvious that behind this script and especially .DSS file is hidden huge portion of the knowledge, so placing it exactly in this README.md file is not good idea. 
 Below find you all information written during creating this tool and analyse the .DSS contents. 
 - How to generate .DSS file using Synology device 
-- .DSS archive file structure 
-- .DSS unpacked repository and theirs elements 
-- _Syno_ConfBkp.db SQLite database 
+- .DSS [archive file](\doc\DSSarchiveFileStruct.md) structure 
+- .DSS [unpacked repository](doc\DSSarchiveFileStruct.md) and theirs elements structure 
+- [_Syno_ConfBkp.db](doc\_Syno_ConfBkp.db.md) SQLite database 
 
 # How to run the script 
 This basic version of the script is written in Windows Powershell, when this script will be fully functional, other languages or platforms might will be created in the future. 
