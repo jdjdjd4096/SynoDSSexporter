@@ -34,5 +34,5 @@ Then run the script adding only as parameter the full filename with configuratio
 - security - expose which sesitive informations .DSS file holds when we make this file public. 
 
 # if you really want to help develop this tool 
-Don't hesitate and please contact withe me. I'm open for the collaboration by this project. 
+Don't hesitate and please contact with me. I'm open for the collaboration by this project. 
 
