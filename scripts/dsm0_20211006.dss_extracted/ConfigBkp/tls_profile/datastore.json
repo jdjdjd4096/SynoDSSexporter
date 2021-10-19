@@ -1,0 +1,1 @@
+{"default-level":2,"services":{"dsm":{"current-level":0,"display-name":"DSM Desktop Service","display-name-i18n":"common:web_desktop"},"smbftpd":{"current-level":0,"display-name":"FTPS","display-name-i18n":"tree:leaf_ftpes"},"system_quickconnect":{"current-level":0,"display-name":"QuickConnect","display-name-i18n":"helptoc:quickconnect"}}}

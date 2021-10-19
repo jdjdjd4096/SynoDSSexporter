@@ -1,0 +1,6 @@
+os_name="DSM"
+conf_version="5"
+dsm_majorversion="7"
+dsm_minorversion="0"
+dsm_buildnumber="41890"
+unique="synology_armada370_ds115j"
