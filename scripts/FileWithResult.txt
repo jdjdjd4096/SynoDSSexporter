@@ -1,5 +1,4 @@
 "KeyName","KeyValue","Explanation","PossibleValues"
-"AAA","BBB","CCC","DDD"
 "ACL_max_count","200","fakeValue","fakeValue"
 "Ad_isDomain","0","fakeValue","fakeValue"
 "Ad_Name","WORKGROUP","fakeValue","fakeValue"

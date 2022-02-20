@@ -214,8 +214,6 @@ if ($database -eq "")
 
                 foreach ($item in $data_confbkp_config_tb) {
 
-                    
-                    # GTAdd "AAA" "BBB" "CCC" "DDD"
                     GTAdd $item.key $item.value "fakeValue" "fakeValue"
                     # Write-Host $item.key $item.value
                     
@@ -228,7 +226,7 @@ if ($database -eq "")
                     {
                         Write-Host "[STATUS] export to file --> " $BackupStatusFile  -ForegroundColor Yellow
                         $GLOBALtable | Export-Csv -Path $BackupStatusFile -NoTypeInformation
-                        $data_confbkp_config_tb | Out-File -FilePath "RAW_data_from_hash.txt"
+                        $data_confbkp_config_tb | Format-Table -Wrap -Autosize | Out-File -Encoding utf8  -FilePath "RAW_data_from_hash.txt" 
                         
                         }
                     else {

@@ -32,6 +32,7 @@ Console dumps only messages about running process, all extracted final data are 
 At this moment useful is only the second file. 
 <img src="/img/command run01.png"  alt="Console output"/>
 
+<img src="/img/RAW_DATA_fromHASH.png"  alt="Hash output"/>
 
 # ToDo 
 - full readable dump into HTML file 
