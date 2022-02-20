@@ -52,9 +52,6 @@ function GTAdd {
     $GLOBALtable.Rows.Add($nr)
 }
 
-GTAdd "AAA" "BBB" "CCC" "DDD"
-
-
 Function Test-IsFileLocked {
     [cmdletbinding()]
     Param (
@@ -214,10 +211,6 @@ if ($database -eq "")
                 # dump all keys and values to readable txt file. 
                 
                 # Define global table to store all information 
-            
-
-                # add test 1 value 
-                # GTAdd "AAA" "BBB" "CCC" "DDD"
 
                 foreach ($item in $data_confbkp_config_tb) {
 
@@ -225,8 +218,6 @@ if ($database -eq "")
                     # GTAdd "AAA" "BBB" "CCC" "DDD"
                     GTAdd $item.key $item.value "fakeValue" "fakeValue"
                     # Write-Host $item.key $item.value
-                    # Write-Host "AAA" "BBB" "CCC" "DDD"
-
                     
                 }
 
@@ -243,121 +234,11 @@ if ($database -eq "")
                     else {
                           Write-Host "[export csv to file] opps ! someone opened the file outside!  --> $BackupStatusFile "  -ForegroundColor Red
                     }
-                
-                    
-             
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <#
-            PS>dir .\dsm0_extracted\
-
-
-    Directory: C:\Users\jdjd\Documents\GitHub\SynoDSSexporter\scripts\dsm0_extracted
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a----        12.10.2021     21:42         174080 dsm0_20211006.tar
-
-    very long listing 
-
-PS>Get-7zip .\dsm0_20211006.tar
-
-
-Index          : 0
-FileName       : ConfigBkp
-LastWriteTime  : 01.01.1970 00:00:00
-CreationTime   : 12.10.2021 22:03:22
-LastAccessTime : 12.10.2021 22:03:22
-Size           : 0
-Crc            : 0
-Attributes     : 0
-IsDirectory    : True
-Encrypted      : False
-Comment        :
-Method         :
-
-PS>Expand-7Zip .\dsm0_20211006.tar .
-
-PS>dir
-
-
-    Directory: C:\Users\jdjd\Documents\GitHub\SynoDSSexporter\scripts\dsm0_extracted
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----        12.10.2021     22:04                ConfigBkp
--a----        12.10.2021     21:42         174080 dsm0_20211006.tar
-
-PS>dir
-
-
-    Directory: C:\Users\jdjd\Documents\GitHub\SynoDSSexporter\scripts\dsm0_extracted\ConfigBkp
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----        12.10.2021     22:04                tls_profile
--a----        01.01.1970     00:00            132 config_info
--a----        01.01.1970     00:00              0 synoS2S.info
--a----        01.01.1970     00:00         159744 _Syno_ConfBkp.db
-
-            #>
-
-            <#
-
-
-            #>
 
         }
         else {
             write-host "this $database doesn't exsist on the disk im provided path " -ForegroundColor Red
         }
     }
-
-    <#
-       TypeName: System.Management.Automation.PSCustomObject
-
-Name        MemberType   Definition                    
-----        ----------   ----------                    
-Equals      Method       bool Equals(System.Object obj)
-GetHashCode Method       int GetHashCode()             
-GetType     Method       type GetType()                
-ToString    Method       string ToString()             
-key         NoteProperty string key=ACL_max_count      
-value       NoteProperty string value=200 
-#>
-
-
- Function Get-FreeDiskSpace
-{
- Param ($drive,$computer)
- $driveData = Get-WmiObject -class win32_LogicalDisk `
- -computername $computer -filter "Name = '$drive'" 
-"
- $computer free disk space on drive $drive 
-    $("{0:n2}" -f ($driveData.FreeSpace/1MB)) MegaBytes
-" 
-}
-
-# Get-FreeDiskSpace -drive "C:" -computer "localhost"
-
 
 # $GLOBALtable | ft KeyName,KeyValue,Explanation,PossibleValues

@@ -22,10 +22,15 @@ Please download this code, save it in the same folder where .DSS file or files a
 Then run the script adding only as parameter the full filename with configuration downloaded from synology device NAS. 
 # Prerequisities needed to run the script 
 - before run the downloaded scripts (mainly SQLite modules)
-- check that module PSSQLite is installed 
-- 
+- check that module PSSQLite is installed
 
 # Script Output 
+Script output is simple as it can at this stage of teh development. 
+Console dumps only messages about running process, all extracted final data are stored in two files. 
+- FileWithResult.txt
+- RAW_data_from_hash.txt
+At this moment useful is only the second file. 
+<img src="/img/command run01.png"  alt="Console output"/>
 
 
 # ToDo 
