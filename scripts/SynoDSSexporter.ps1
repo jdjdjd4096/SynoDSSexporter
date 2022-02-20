@@ -10,7 +10,7 @@
 set-psdebug -strict; $ErrorActionPreference = "stop"
 
 # This Script version 
-$ThisScriptVersion = "0.17 12.10.2021"
+$ThisScriptVersion = "0.18 20.02.2022"
 $CurrDotNetVer = get-itemproperty -name version,release "hklm:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\FULL"
 
 $dir = $PSCommandPath | Split-Path -Parent
