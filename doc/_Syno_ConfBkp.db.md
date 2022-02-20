@@ -44,7 +44,7 @@ sqlite>
 
 :pencil: Structure table: KEY (text) VALUE (text)
 
-Home dirextories settings 
+Home directories settings 
 
 "Homeservice_isEnableHomeService"	"1"
 "Homeservice_volumeID"	"1"
