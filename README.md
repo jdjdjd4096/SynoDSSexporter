@@ -1,3 +1,6 @@
+<head>
+	<meta name="google-site-verification" content="MhBOIEzWiTyXQtH21gsu_GEenIEN1y-HbEzsaKXdxaI" />
+</head>
 
 <img src="/img/dsm_export_config.png"  alt="Full Example"/>
 
